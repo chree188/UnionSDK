@@ -365,6 +365,18 @@ func createAPIS() {
 		},
 	}
 
+	request = ApiInfo{
+		APIDESC:    "jd.union.open.position.create 工具商媒体帮助推客批量创建推广位",
+		APIORGNAME: "jd.union.open.position.create",
+		APIURL:     "https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.position.create",
+		CHECKFIELDS: []CheckField{
+			{
+				FieldName:         "360buy_param_json",
+				FieldNotNullCheck: true,
+			},
+		},
+	}
+
 	createAPI(request)
 }
 
