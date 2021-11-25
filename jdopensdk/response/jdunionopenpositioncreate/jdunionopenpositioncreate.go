@@ -54,17 +54,17 @@ type QueryResult struct {
 }
 
 type Data struct {
-	SesultList *SesultList                  `json:"resultList"`
-	SiteId     string                       `json:"siteId"`
-	Type       string                       `json:"type"`
-	UnionId    string                       `json:"unionId"`
-	Pid        *PositionCreateResultPidList `json:"pid"` //pid：仅uniontype传4时，展示pid；可用于内容平台推广
+	SesultList string `json:"resultList"`
+	SiteId     int64  `json:"siteId"`
+	Type       int64  `json:"type"`
+	UnionId    int64  `json:"unionId"`
+	Pid        string `json:"pid"` //pid：仅uniontype传4时，展示pid；可用于内容平台推广
 }
 
 type SesultList struct {
 	Result string `json:"result"`
 }
 
-type PositionCreateResultPidList struct {
+type PidList struct {
 	Pid string `json:"pid"` //pid结果，仅uniontype传4时，展示pid；可用于内容平台推广
 }
