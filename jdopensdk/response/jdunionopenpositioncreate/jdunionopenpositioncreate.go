@@ -9,7 +9,7 @@ import (
 // Response jd.union.open.position.create 创建推广位
 type Response struct {
 	response.TopResponse
-	Responce Responce `json:"jd_union_open_position_create_response"`
+	Responce Responce `json:"jd_union_open_position_create_responce"`
 }
 
 // WrapResult 解析输出结果
